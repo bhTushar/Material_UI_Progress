@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2021-22 Application Library Engineering Group
+ * Copyright (C) 2022 Application Library Engineering Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -88,7 +88,6 @@ export default class CircularPath implements ProgressBar {
 
   public reset() {
     this.isReset = true;
-
   }
 
   private point2Str(point: number[]) {
@@ -114,12 +113,10 @@ export default class CircularPath implements ProgressBar {
   }
 
   private calculation(angle: number): number[]{
-
     let radian = angle * Math.PI / 180;
     let circleRadius = this.radius + (this.strokeWidth / 2);
     let endX = circleRadius + (this.radius * Math.sin(radian)) + this.strokeWidth;
     let endY = circleRadius - (this.radius * Math.cos(radian)) + this.strokeWidth;
-
     if ((circleRadius - 1) < endX && endX < circleRadius && (circleRadius - endX) < 0.01) {
       endX = circleRadius - 0.01;
     }

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2021-22 Application Library Engineering Group
+ * Copyright (C) 2022 Application Library Engineering Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,15 +37,10 @@ struct MaterialProgressBarSample {
 
   build() {
     Scroll() {
-
       Flex({ direction: FlexDirection.Column, }) {
-
-
         Text("Determinate Circular ProgressBar (Snapshot)")
           .fontSize(18)
           .margin(2)
-
-
         Flex() {
           MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialCircular,
             modelBuild: {
@@ -60,8 +55,6 @@ struct MaterialProgressBarSample {
         Text("Determinate Circular ProgressBar (One round progress)")
           .fontSize(18)
           .margin(2)
-
-
         Flex() {
           MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialCircular,
             modelBuild: {
@@ -75,7 +68,6 @@ struct MaterialProgressBarSample {
         Text("Determinate Circular ProgressBar (Widestroke)")
           .fontSize(18)
           .margin(2)
-
         Flex() {
           MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialCircular,
             modelBuild: {
@@ -89,8 +81,6 @@ struct MaterialProgressBarSample {
         Text("Indeterminate Circular ProgressBar")
           .fontSize(18)
           .margin(2)
-
-
         Flex() {
           MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialCircular,
             modelBuild: {
@@ -104,8 +94,6 @@ struct MaterialProgressBarSample {
         Text("Indeterminate Circular ProgressBar (Customized color)")
           .fontSize(18)
           .margin(2)
-
-
         Flex() {
           MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialCircular,
             modelBuild: {
@@ -121,8 +109,6 @@ struct MaterialProgressBarSample {
         Text("Indeterminate Circular ProgressBar (Variable Stroke)")
           .fontSize(18)
           .margin(2)
-
-
         Flex() {
           MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialCircular,
             modelBuild: {
@@ -132,14 +118,14 @@ struct MaterialProgressBarSample {
               strokeWidth: 10
             } })
         }.margin({ top: 20, left: 40 })
-
-
       }
       .width('100%')
       .padding({ top: 0, left: 10, right: 10, bottom: 50 })
       .margin({ top: 0, left: 0, right: 0, bottom: 50 })
 
-    }.scrollable(ScrollDirection.Vertical).scrollBar(BarState.On)
+    }
+    .scrollable(ScrollDirection.Vertical)
+    .scrollBar(BarState.On)
     .width('100%')
     .height('100%')
     .padding({ top: 20, left: 10, right: 10, bottom: 50 })

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2021-22 Application Library Engineering Group
+ * Copyright (C) 2022 Application Library Engineering Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,15 +24,11 @@ export default class LinearPath implements ProgressBar {
   progress: number;
   barColor: number;
   maxProgress: number = 100
-
-  aboutToAppear() {
-
-  }
+  aboutToAppear() {}
 
   private update() {
     let end = 1000 * this.progress / this.maxProgress
     this.endPoint[0] = end;
-    // need to look here
     this.pathCmd = `M${this.point2Str(this.startPoint)} L${this.point2Str(this.endPoint)}`
   }
 

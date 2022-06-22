@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2021-22 Application Library Engineering Group
+ * Copyright (C) 2022 Application Library Engineering Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,14 +25,9 @@ struct MaterialProgressBar {
   aboutToAppear() {
     console.log('style:' + this.mStyle)
     console.log('modelBuild:' + JSON.stringify(this.modelBuild))
-
     this.modelBuild.style = this.mStyle
-
   }
-
-  onPageShow() {
-
-  }
+  onPageShow() {}
 
   build() {
     if (this.modelBuild) {
@@ -44,10 +39,8 @@ struct MaterialProgressBar {
         Text('undefined').fontSize(30)
       }
     }
-
   }
 }
-
 
 namespace MaterialProgressBar {
   export class MaterialModel {

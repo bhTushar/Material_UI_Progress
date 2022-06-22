@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2021-22 Application Library Engineering Group
+ * Copyright (C) 2022 Application Library Engineering Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -77,7 +77,6 @@ export default struct CircularComponent {
 
   build() {
     Stack({ alignContent: Alignment.TopStart }) {
-      //    Shape() {
       if (this.bgColor) {
         Path()
           .commands(this.bgPathCmd)
@@ -95,7 +94,6 @@ export default struct CircularComponent {
           .fillOpacity(0)
           .strokeLineCap(LineCapStyle.Round)
       }
-
       Path()
         .commands(this.progressPathCmd)
         .stroke(this.color)
@@ -105,6 +103,5 @@ export default struct CircularComponent {
     }
     .width(this.width)
     .height(this.height)
-
   }
 }
