@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import ProgressBar from './ProgressOfTheBar';
+import ProgressBar from './ProgressBar';
 
 export default class CircularPath implements ProgressBar {
   private startPoint: number[];
@@ -67,14 +67,12 @@ export default class CircularPath implements ProgressBar {
   }
 
   public setRadius(radius: number): CircularPath{
-    //    this.radius = vp2px(radius);
     this.radius = (radius);
     return this;
   }
 
   public setStrokeWidth(strokeWidth: number): CircularPath{
     this.strokeWidth = (strokeWidth);
-    //    this.strokeWidth = vp2px(strokeWidth);
     return this;
   }
 

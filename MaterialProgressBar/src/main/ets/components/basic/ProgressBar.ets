@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-export default interface ProgressOfTheBar {
+export default interface ProgressBar {
   progress: number;
   setProgress(progress: number);
   getProgress(): number;

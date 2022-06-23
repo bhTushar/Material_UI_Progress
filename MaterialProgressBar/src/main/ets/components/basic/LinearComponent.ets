@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import LinearPath from './linearpath'
+import LinearPath from './LinearPath'
 
 @Component
 export default struct LinearComponent {

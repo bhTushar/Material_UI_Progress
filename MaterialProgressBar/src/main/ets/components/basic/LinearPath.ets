@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import ProgressBar from './ProgressOfTheBar'
+import ProgressBar from './ProgressBar'
 
 export default class LinearPath implements ProgressBar {
   private startPoint: number[] = [0, 0]
