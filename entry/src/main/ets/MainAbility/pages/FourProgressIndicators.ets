@@ -40,8 +40,8 @@ struct MaterialProgressBarSample {
       Flex({ direction: FlexDirection.Column, }) {
 
         Text("Determinate Linear Progress")
-          .fontSize(18)
-          .margin(2)
+          .fontSize('18vp')
+          .margin('2vp')
         Flex({ direction: FlexDirection.Column }) {
           MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialHorizontal,
             modelBuild: {
@@ -51,12 +51,12 @@ struct MaterialProgressBarSample {
               bgColor: "#b3ddd9"
             } })
         }.width('100%')
-        .height(70)
-        .margin(2)
+        .height('70vp')
+        .margin('2vp')
 
         Text("Indeterminate Linear Progress")
-          .fontSize(18)
-          .margin(2)
+          .fontSize('18vp')
+          .margin('2vp')
         Flex({ direction: FlexDirection.Column }) {
           MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialHorizontal,
             modelBuild: {
@@ -65,12 +65,12 @@ struct MaterialProgressBarSample {
               bgColor: "#b3ddd9"
             } })
         }.width('100%')
-        .height(70)
-        .margin(2)
+        .height('70vp')
+        .margin('2vp')
 
         Text("Determinate Circular ProgressBar")
-          .fontSize(18)
-          .margin(2)
+          .fontSize('18vp')
+          .margin('2vp')
         Flex({ direction: FlexDirection.Row, justifyContent: FlexAlign.SpaceBetween }) {
           Flex() {
             MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialCircular,
@@ -81,13 +81,13 @@ struct MaterialProgressBarSample {
                 strokeWidth: 4
               } })
           }
-          .position({ x: '30%', y: '30%' })
-          .padding({ right: 5, bottom: 0 })
-        }.height(100)
+          .position({ x: '60vp', y: '50vp' })
+          .padding({ right: '5vp', bottom: '0vp' })
+        }.height('100vp')
 
         Text("Indeterminate Circular ProgressBar")
-          .fontSize(18)
-          .margin(2)
+          .fontSize('18vp')
+          .margin('2vp')
         Flex({ direction: FlexDirection.Row, justifyContent: FlexAlign.SpaceBetween }) {
           Flex() {
             MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialCircular,
@@ -98,15 +98,15 @@ struct MaterialProgressBarSample {
                 strokeWidth: 4
               } })
           }
-          .position({ x: '25%', y: '30%' }).padding({ right: 15, bottom: 0 })
+          .position({ x: '50vp', y: '50vp' }).padding({ right: '15vp', bottom: '0vp' })
         }.height(100)
       }
       .width('100%')
-      .padding({ top: 0, left: 10, right: 10, bottom: 50 })
-      .margin({ top: 0, left: 0, right: 0, bottom: 50 })
+      .padding({ top: '0vp', left: '10vp', right: '10vp', bottom: '50vp' })
+      .margin({ top: '0vp', left: '0vp', right: '0vp', bottom: '50vp' })
     }.scrollable(ScrollDirection.Vertical)
     .width('100%')
     .height('80%')
-    .padding({ top: 100, left: 10, right: 10, bottom: 50 })
+    .padding({ top: '100vp', left: '10vp', right: '10vp', bottom: '50vp' })
   }
 }

@@ -40,8 +40,8 @@ struct MaterialProgressBarSample {
 
       Flex({ direction: FlexDirection.Column, }) {
         Text("Determinate Linear Progress")
-          .fontSize(18)
-          .margin(2)
+          .fontSize('18vp')
+          .margin('2vp')
         Flex({ direction: FlexDirection.Column }) {
           MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialHorizontal,
             modelBuild: {
@@ -53,43 +53,43 @@ struct MaterialProgressBarSample {
               bgColor: "#b3ddd9"
             } })
         }.width('100%')
-        .height(20)
-        .margin({ top: 20 })
+        .height('20vp')
+        .margin({ top: '20vp' })
 
         Text("Determinate Linear Progress (One cycle)")
-          .fontSize(18)
-          .margin(2)
+          .fontSize('18vp')
+          .margin('2vp')
         Flex({ direction: FlexDirection.Column }) {
           MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialHorizontal,
             modelBuild: {
               color: '#009688',
               indeterminate: true,
               secondColor: '#9fc6c2',
-              secondProgress: 60,
+              secondProgress: '60vp',
               bgColor: "#b3ddd9"
             } })
         }.width('100%')
-        .height(20)
-        .margin({ top: 20 })
+        .height('20vp')
+        .margin({ top: '20vp' })
 
         Text("Determinate Linear Progress (Custom color)")
-          .fontSize(18)
-          .margin(2)
+          .fontSize('18vp')
+          .margin('2vp')
         Flex({ direction: FlexDirection.Column }) {
           MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialHorizontal,
             modelBuild: {
               color: '#ffac0b0b',
               secondColor: '#ffc16f6f',
-              secondProgress: 60,
+              secondProgress: '60vp',
               bgColor: "#b3ddd9"
             } })
         }.width('100%')
-        .height(20)
-        .margin({ top: 20 })
+        .height('20vp')
+        .margin({ top: '20vp' })
 
         Text("Indeterminate Linear Progress")
-          .fontSize(18)
-          .margin(2)
+          .fontSize('18vp')
+          .margin('2vp')
         Flex({ direction: FlexDirection.Column }) {
           MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialHorizontal,
             modelBuild: {
@@ -99,12 +99,12 @@ struct MaterialProgressBarSample {
               bgColor: "#b3ddd9"
             } })
         }.width('100%')
-        .height(20)
-        .margin({ top: 20 })
+        .height('20vp')
+        .margin({ top: '20vp' })
 
         Text("Indeterminate Linear Progress (Custom color)")
-          .fontSize(18)
-          .margin(2)
+          .fontSize('18vp')
+          .margin('2vp')
         Flex({ direction: FlexDirection.Column }) {
           MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialHorizontal,
             modelBuild: {
@@ -113,18 +113,18 @@ struct MaterialProgressBarSample {
               bgColor: '#ffd6d30b',
             } })
         }.width('100%')
-        .height(20)
-        .margin({ top: 20 })
+        .height('20vp')
+        .margin({ top: '20vp' })
       }
       .width('100%')
-      .padding({ top: 0, left: 10, right: 10, bottom: 50 })
-      .margin({ top: 0, left: 0, right: 0, bottom: 50 })
+      .padding({ top: '0vp', left: '10vp', right: '10vp', bottom: '50vp' })
+      .margin({ top: '0vp', left: '0vp', right: '0vp', bottom: '50vp' })
 
     }
     .scrollable(ScrollDirection.Vertical)
     .scrollBar(BarState.On)
     .width('100%')
     .height('100%')
-    .padding({ top: 20, left: 10, right: 10, bottom: 50 })
+    .padding({ top: '20vp', left: '10vp', right: '10vp', bottom: '50vp' })
   }
 }

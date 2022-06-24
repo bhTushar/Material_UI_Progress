@@ -39,8 +39,8 @@ struct MaterialProgressBarSample {
     Scroll() {
       Flex({ direction: FlexDirection.Column, }) {
         Text("Determinate Circular ProgressBar (Snapshot)")
-          .fontSize(18)
-          .margin(2)
+          .fontSize('18vp')
+          .margin('2vp')
         Flex() {
           MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialCircular,
             modelBuild: {
@@ -50,11 +50,11 @@ struct MaterialProgressBarSample {
               radius: 48,
               strokeWidth: 4
             } })
-        }.margin({ top: 20, left: 40 })
+        }.margin({ top: '20vp', left: '40vp' })
 
         Text("Determinate Circular ProgressBar (One round progress)")
-          .fontSize(18)
-          .margin(2)
+          .fontSize('18vp')
+          .margin('2vp')
         Flex() {
           MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialCircular,
             modelBuild: {
@@ -63,11 +63,11 @@ struct MaterialProgressBarSample {
               radius: 48,
               strokeWidth: 4
             } })
-        }.margin({ top: 20, left: 40 })
+        }.margin({ top: '20vp', left: '40vp' })
 
         Text("Determinate Circular ProgressBar (Widestroke)")
-          .fontSize(18)
-          .margin(2)
+          .fontSize('18vp')
+          .margin('2vp')
         Flex() {
           MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialCircular,
             modelBuild: {
@@ -76,11 +76,11 @@ struct MaterialProgressBarSample {
               radius: 60,
               strokeWidth: 10
             } })
-        }.margin({ top: 20, left: 40 })
+        }.margin({ top: '20vp', left: '40vp' })
 
         Text("Indeterminate Circular ProgressBar")
-          .fontSize(18)
-          .margin(2)
+          .fontSize('18vp')
+          .margin('2vp')
         Flex() {
           MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialCircular,
             modelBuild: {
@@ -89,11 +89,11 @@ struct MaterialProgressBarSample {
               radius: 48,
               strokeWidth: 4
             } })
-        }.margin({ top: 20, left: 40 })
+        }.margin({ top: '20vp', left: '40vp' })
 
         Text("Indeterminate Circular ProgressBar (Customized color)")
-          .fontSize(18)
-          .margin(2)
+          .fontSize('18vp')
+          .margin('2vp')
         Flex() {
           MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialCircular,
             modelBuild: {
@@ -104,11 +104,11 @@ struct MaterialProgressBarSample {
               radius: 48,
               strokeWidth: 4
             } })
-        }.margin({ top: 20, left: 40 })
+        }.margin({ top: '20vp', left: '40vp' })
 
         Text("Indeterminate Circular ProgressBar (Variable Stroke)")
-          .fontSize(18)
-          .margin(2)
+          .fontSize('18vp')
+          .margin('2vp')
         Flex() {
           MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialCircular,
             modelBuild: {
@@ -117,17 +117,17 @@ struct MaterialProgressBarSample {
               radius: 60,
               strokeWidth: 10
             } })
-        }.margin({ top: 20, left: 40 })
+        }.margin({ top: '20vp', left: '40vp' })
       }
       .width('100%')
-      .padding({ top: 0, left: 10, right: 10, bottom: 50 })
-      .margin({ top: 0, left: 0, right: 0, bottom: 50 })
+      .padding({ top: '0vp', left: '10vp', right: '10vp', bottom: '50vp' })
+      .margin({ top: '0vp', left: '0vp', right: '0vp', bottom: '50vp' })
 
     }
     .scrollable(ScrollDirection.Vertical)
     .scrollBar(BarState.On)
     .width('100%')
     .height('100%')
-    .padding({ top: 20, left: 10, right: 10, bottom: 50 })
+    .padding({ top: '20vp', left: '0vp', right: '10vp', bottom: '50vp' })
   }
 }
