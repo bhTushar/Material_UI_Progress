@@ -10,6 +10,6 @@
   "repository": {},
   "license": "ISC",
   "dependencies": {
-    "@ohos/materialprogressbar": "file:../materialprogressbar"
+    "@ohos/materialprogressbar": "file:../MaterialProgressBar"
   }
 }

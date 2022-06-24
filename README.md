@@ -5,8 +5,8 @@ Material Progress Indicators reserves code for instant usage of progress indicat
 Add the below dependency in entry/package.json for using ProgressIndicators
 ```
 "dependencies": {
-"@ohos/materialprogressbar": "file:../materialprogressbar"
-}
+    "@ohos/materialprogressbar": "file:../MaterialProgressBar"
+  }
 ```
 
 ## Implementation 
