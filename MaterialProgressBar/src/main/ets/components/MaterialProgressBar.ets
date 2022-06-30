@@ -23,22 +23,12 @@ struct MaterialProgressBar {
   modelBuild: any
 
   aboutToAppear() {
-    console.log('style:' + this.mStyle)
-    console.log('modelBuild:' + JSON.stringify(this.modelBuild))
     this.modelBuild.style = this.mStyle
   }
   onPageShow() {}
 
   build() {
-    if (this.modelBuild) {
-      if (this.mStyle == MaterialProgressStyle.MaterialCircular) {
         MaterialComponent(this.modelBuild)
-      } else if (this.mStyle == MaterialProgressStyle.MaterialHorizontal) {
-        MaterialComponent(this.modelBuild)
-      } else {
-        Text('undefined').fontSize(30)
-      }
-    }
   }
 }
 
