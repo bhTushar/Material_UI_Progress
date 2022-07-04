@@ -19,7 +19,7 @@ import MaterialProgressStyle from './materialprogressstyle'
 
 @Component
 struct MaterialProgressBar {
-  @State mStyle: MaterialProgressStyle = MaterialProgressStyle.MaterialCircular
+  @State mStyle: MaterialProgressStyle = MaterialProgressStyle.MaterialHorizontal
   modelBuild: any
 
   aboutToAppear() {
