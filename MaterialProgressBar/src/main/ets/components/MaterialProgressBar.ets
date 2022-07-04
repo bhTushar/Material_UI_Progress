@@ -28,7 +28,13 @@ struct MaterialProgressBar {
   onPageShow() {}
 
   build() {
+    if (this.modelBuild) {
+      if (this.mStyle == MaterialProgressStyle.MaterialHorizontal  || this.mStyle == MaterialProgressStyle.MaterialCircular) {
         MaterialComponent(this.modelBuild)
+      } else {
+        MaterialComponent(this.modelBuild)
+      }
+    }
   }
 }
 
