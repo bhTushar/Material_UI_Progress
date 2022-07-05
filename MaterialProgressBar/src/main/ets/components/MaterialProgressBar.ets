@@ -24,16 +24,16 @@ struct MaterialProgressBar {
 
   aboutToAppear() {
     this.modelBuild.style = this.mStyle
+    if (this.mStyle != MaterialProgressStyle.MaterialHorizontal  && this.mStyle != MaterialProgressStyle.MaterialCircular) {
+      this.mStyle = MaterialProgressStyle.MaterialHorizontal
+    }
+
   }
   onPageShow() {}
 
   build() {
     if (this.modelBuild) {
-      if (this.mStyle == MaterialProgressStyle.MaterialHorizontal  || this.mStyle == MaterialProgressStyle.MaterialCircular) {
         MaterialComponent(this.modelBuild)
-      } else {
-        MaterialComponent(this.modelBuild)
-      }
     }
   }
 }
