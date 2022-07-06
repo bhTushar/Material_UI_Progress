@@ -22,12 +22,13 @@ export default class CircularPath implements ProgressBar {
   private angle: number = 0;
   private offsetAngle: number = 0;
   private radius: number = (100);
-  private strokeWidth: number = (5);
+  private strokeWidth: string = '5vp';
   private pathCmd: string = '';
   progress: number = 0;
   color: Color;
   maxProgress: number = 100;
   private isReset: boolean = true;
+  private strokewidth_a:number =  parseInt(this.strokeWidth.substr(0,this.strokeWidth.length - 2))
 
   setAngle(angle: number): CircularPath{
     this.offsetAngle = angle;
@@ -71,12 +72,12 @@ export default class CircularPath implements ProgressBar {
     return this;
   }
 
-  public setStrokeWidth(strokeWidth: number): CircularPath{
+  public setStrokeWidth(strokeWidth: string): CircularPath{
     this.strokeWidth = (strokeWidth);
     return this;
   }
 
-  public getStrokeWidth(): number{
+  public getStrokeWidth(): string{
     return this.strokeWidth;
   }
 
@@ -112,9 +113,9 @@ export default class CircularPath implements ProgressBar {
 
   private calculation(angle: number): number[]{
     let radian = angle * Math.PI / 180;
-    let circleRadius = this.radius + (this.strokeWidth / 2);
-    let endX = circleRadius + (this.radius * Math.sin(radian)) + this.strokeWidth;
-    let endY = circleRadius - (this.radius * Math.cos(radian)) + this.strokeWidth;
+    let circleRadius = this.radius + (this.strokewidth_a / 2);
+    let endX = circleRadius + (this.radius * Math.sin(radian)) + this.strokewidth_a;
+    let endY = circleRadius - (this.radius * Math.cos(radian)) + this.strokewidth_a;
     if ((circleRadius - 1) < endX && endX < circleRadius && (circleRadius - endX) < 0.01) {
       endX = circleRadius - 0.01;
     }

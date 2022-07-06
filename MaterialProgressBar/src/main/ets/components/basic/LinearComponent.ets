@@ -19,9 +19,10 @@ import LinearPath from './LinearPath'
 @Component
 export default struct LinearComponent {
   private progressBar: LinearPath
-  private width: number = 0
-  private height: number = 0
-  private strokeWidth = 6
+  private width: string = '0vp'
+  private height: string = '0vp'
+  private strokeWidth = '6vp'
+  private strokewidth_a:number =  parseInt(this.strokeWidth.substr(0,this.strokeWidth.length-2))
   private progressMax: number = 100
   private bgColor: Color = null;
   private color: Color = 0x029789
@@ -34,7 +35,7 @@ export default struct LinearComponent {
   @State private secondProgressPathCmd: string = ''
 
   aboutToAppear() {
-    this.width = (this.progressMax)
+    this.width = (this.progressMax).toString()
     this.height = (this.strokeWidth)
     this.progressBar = new LinearPath()
       .setMaxProgress(this.progressMax)

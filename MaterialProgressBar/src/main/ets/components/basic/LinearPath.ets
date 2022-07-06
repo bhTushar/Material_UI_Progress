@@ -19,7 +19,7 @@ import ProgressBar from './ProgressBar'
 export default class LinearPath implements ProgressBar {
   private startPoint: number[] = [0, 0]
   private endPoint: number[] = [0, 0]
-  private strokeWidth: number = vp2px(5)
+  private strokeWidth: string = '4vp'
   private pathCmd: string = ''
   progress: number;
   barColor: number;

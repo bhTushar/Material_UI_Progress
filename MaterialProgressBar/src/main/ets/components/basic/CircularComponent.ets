@@ -24,11 +24,12 @@ export default struct CircularComponent {
   @State bgPathCmd: string = '';
   private bgColor: Color = null;
   private color: Color = 0x029789;
-  private width: number = 0;
-  private height: number = 0;
+  private width: string = '0vp';
+  private height: string = '0vp';
   private progressMax: number = 100;
   private radius = 45;
-  private strokeWidth = 4;
+  private strokeWidth = '4vp';
+  private strokewidth_a:number =  parseInt(this.strokeWidth.substr(0,this.strokeWidth.length-2))
   private secondColor: Color = null;
   @State secondProgress: number = 0;
   @State private secondProgressPathCmd: string = '';

@@ -54,7 +54,7 @@ namespace MaterialProgressBar {
     secondColor: Color = null
     secondProgress: number = 0
     bgColor: Color = null
-    strokeWidth: number = 8
+    strokeWidth: string = '8vp'
 
     setSecondColor(secondColor: Color): MaterialModel{
       this.secondColor = secondColor
@@ -159,12 +159,12 @@ namespace MaterialProgressBar {
       return this.secondProgress
     }
 
-    setStrokeWidth(strokeWidth: number): MaterialModel{
+    setStrokeWidth(strokeWidth: string): MaterialModel{
       this.strokeWidth = strokeWidth
       return this
     }
 
-    getStrokeWidth(): number{
+    getStrokeWidth(): string{
       return this.strokeWidth
     }
   }

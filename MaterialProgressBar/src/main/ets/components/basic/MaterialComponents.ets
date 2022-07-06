@@ -34,7 +34,8 @@ struct MaterialComponent {
   secondColor: Color = null
   secondProgress: number = 0
   bgColor: Color = null
-  strokeWidth: number = 8
+  strokeWidth: string = '8vp'
+  private strokewidth_a:number =  parseInt(this.strokeWidth.substr(0,this.strokeWidth.length-2))
   private offset: number = 0
   private intervalId: number
   private isAddProgress: boolean = true

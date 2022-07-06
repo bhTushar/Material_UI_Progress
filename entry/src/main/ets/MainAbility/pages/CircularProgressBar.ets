@@ -38,45 +38,6 @@ struct MaterialProgressBarSample {
   build() {
     Scroll() {
       Flex({ direction: FlexDirection.Column, }) {
-        Text("Determinate Circular ProgressBar (Snapshot)")
-          .fontSize('18vp')
-          .margin('2vp')
-        Flex() {
-          MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialCircular,
-            modelBuild: {
-              indeterminateAngle: false,
-              indeterminate: false,
-              bgColor: "#9fc6c2",
-              radius: 48,
-              strokeWidth: 4
-            } })
-        }.margin({ top: '20vp', left: '40vp' })
-
-        Text("Determinate Circular ProgressBar (One round progress)")
-          .fontSize('18vp')
-          .margin('2vp')
-        Flex() {
-          MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialCircular,
-            modelBuild: {
-              indeterminateAngle: false,
-              indeterminate: true,
-              radius: 48,
-              strokeWidth: 4
-            } })
-        }.margin({ top: '20vp', left: '40vp' })
-
-        Text("Determinate Circular ProgressBar (Widestroke)")
-          .fontSize('18vp')
-          .margin('2vp')
-        Flex() {
-          MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialCircular,
-            modelBuild: {
-              indeterminateAngle: false,
-              indeterminate: true,
-              radius: 60,
-              strokeWidth: 10
-            } })
-        }.margin({ top: '20vp', left: '40vp' })
 
         Text("Indeterminate Circular ProgressBar")
           .fontSize('18vp')
@@ -87,7 +48,7 @@ struct MaterialProgressBarSample {
               indeterminateAngle: true,
               indeterminate: true,
               radius: 48,
-              strokeWidth: 4
+              strokeWidth: '4vp'
             } })
         }.margin({ top: '20vp', left: '40vp' })
 
@@ -102,7 +63,7 @@ struct MaterialProgressBarSample {
               color: "#ff99a07f",
               bgColor: '#ffd6d30b',
               radius: 48,
-              strokeWidth: 4
+              strokeWidth: '4vp'
             } })
         }.margin({ top: '20vp', left: '40vp' })
 
@@ -115,13 +76,65 @@ struct MaterialProgressBarSample {
               indeterminateAngle: true,
               indeterminate: true,
               radius: 60,
-              strokeWidth: 10
+              strokeWidth: '10vp'
             } })
         }.margin({ top: '20vp', left: '40vp' })
+
+        Text("Determinate Circular ProgressBar (Snapshot)")
+          .fontSize('18vp')
+          .margin('2vp')
+        Flex({ direction: FlexDirection.Row, justifyContent: FlexAlign.SpaceBetween }) {
+          Flex() {
+            MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialCircular,
+              modelBuild: {
+                indeterminateAngle: false,
+                indeterminate: false,
+                radius: 48,
+                strokeWidth: '4vp'
+              } })
+          }
+          .position({ x: '55vp', y: '45vp' })
+          .padding({ right: '5vp', bottom: '0vp' })
+        }.height('100vp')
+
+        Text("Determinate Circular ProgressBar (One round progress)")
+          .fontSize('18vp')
+          .margin('2vp')
+        Flex({ direction: FlexDirection.Row, justifyContent: FlexAlign.SpaceBetween }) {
+          Flex() {
+            MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialCircular,
+              modelBuild: {
+                indeterminateAngle: false,
+                indeterminate: true,
+                radius: 48,
+                strokeWidth: '4vp'
+              } })
+          }
+          .position({ x: '55vp', y: '45vp' })
+          .padding({ right: '5vp', bottom: '0vp' })
+        }.height('100vp')
+
+        Text("Determinate Circular ProgressBar (Variable stroke)")
+          .fontSize('18vp')
+          .margin('2vp')
+        Flex({ direction: FlexDirection.Row, justifyContent: FlexAlign.SpaceBetween }) {
+          Flex() {
+            MaterialProgressBar({ mStyle: MaterialProgressStyle.MaterialCircular,
+              modelBuild: {
+                indeterminateAngle: false,
+                indeterminate: true,
+                radius: 48,
+                strokeWidth: '1vp'
+              } })
+          }
+          .position({ x: '55vp', y: '45vp' })
+          .padding({ right: '5vp', bottom: '0vp' })
+        }.height('100vp')
+
       }
       .width('100%')
-      .padding({ top: '0vp', left: '10vp', right: '10vp', bottom: '50vp' })
-      .margin({ top: '0vp', left: '0vp', right: '0vp', bottom: '50vp' })
+      .padding({ top: '0vp', left: '10vp', right: '10vp', bottom: '5vp' })
+      .margin({ top: '0vp', left: '0vp', right: '0vp', bottom: '5vp' })
 
     }
     .scrollable(ScrollDirection.Vertical)

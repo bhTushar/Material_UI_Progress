@@ -78,10 +78,10 @@ struct MaterialProgressBarSample {
                 indeterminateAngle: false,
                 indeterminate: true,
                 radius: 48,
-                strokeWidth: 4
+                strokeWidth: '4vp'
               } })
           }
-          .position({ x: '60vp', y: '50vp' })
+          .position({ x: '55vp', y: '45vp' })
           .padding({ right: '5vp', bottom: '0vp' })
         }.height('100vp')
 
@@ -95,7 +95,7 @@ struct MaterialProgressBarSample {
                 indeterminateAngle: true,
                 indeterminate: true,
                 radius: 48,
-                strokeWidth: 4
+                strokeWidth: '4vp'
               } })
           }
           .position({ x: '50vp', y: '50vp' }).padding({ right: '15vp', bottom: '0vp' })
