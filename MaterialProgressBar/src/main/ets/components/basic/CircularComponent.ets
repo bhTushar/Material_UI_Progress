@@ -29,7 +29,7 @@ export default struct CircularComponent {
   private progressMax: number = 100;
   private radius = 45;
   private strokeWidth = '4vp';
-  private strokewidth_a:number =  parseInt(this.strokeWidth.substr(0,this.strokeWidth.length-2))
+  private strokewidth_a: number = parseInt(this.strokeWidth.substr(0, this.strokeWidth.length - 2))
   private secondColor: Color = null;
   @State secondProgress: number = 0;
   @State private secondProgressPathCmd: string = '';

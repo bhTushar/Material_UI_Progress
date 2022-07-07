@@ -24,7 +24,8 @@ export default class LinearPath implements ProgressBar {
   progress: number;
   barColor: number;
   maxProgress: number = 100
-  aboutToAppear() {}
+  aboutToAppear() {
+  }
 
   private update() {
     let end = 1000 * this.progress / this.maxProgress

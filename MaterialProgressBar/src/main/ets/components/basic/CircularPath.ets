@@ -28,7 +28,7 @@ export default class CircularPath implements ProgressBar {
   color: Color;
   maxProgress: number = 100;
   private isReset: boolean = true;
-  private strokewidth_a:number =  parseInt(this.strokeWidth.substr(0,this.strokeWidth.length - 2))
+  private strokewidth_a: number = parseInt(this.strokeWidth.substr(0, this.strokeWidth.length - 2))
 
   setAngle(angle: number): CircularPath{
     this.offsetAngle = angle;

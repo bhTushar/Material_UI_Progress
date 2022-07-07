@@ -6,5 +6,5 @@
 /entry/.preview
 /entry/node_modules
 /entry/package-lock.json
-/MaterialProgressBar/.preview
-/MaterialProgressBar/package-lock.json
+/materialprogressbar/.preview
+/materialprogressbar/package-lock.json

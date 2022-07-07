@@ -16,10 +16,14 @@
 
 export default interface ProgressBar {
   progress: number;
+
   setProgress(progress: number);
+
   getProgress(): number;
 
   maxProgress: number;
+
   setMaxProgress(maxProgress: number);
+
   getMaxProgress(): number;
 }

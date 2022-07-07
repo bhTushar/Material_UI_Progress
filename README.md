@@ -16,7 +16,7 @@ Some examples of the Progress Indicators handy to use are mentioned below.
 Add the below dependency in entry/package.json for using ProgressIndicators
 ```
 "dependencies": {
-    "@ohos/materialprogressbar": "file:../MaterialProgressBar"
+    "@ohos/materialprogressbar": "file:../materialprogressbar"
   }
 ```
 
@@ -74,7 +74,7 @@ To use an instance of Linear Determinate Progress Indicator, the 'indeterminate'
 ![img.png](resources/UsageIC.gif)
 
 ## Compatibility
-Supports OpenHarmony API version 8
+Supports OpenHarmony API version 8 and above
 
 ## Code Contribution
 If you find any problems during usage, you can raise an [Issue](https://github.com/Applib-OpenHarmony/MaterialProgress/issues).
